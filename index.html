@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>CSS Flexbox & Transitions</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Snippet Cheatsheet</h1>
+      <p>
+        Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snipet below and it will automatically select all of the code for you to copy.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Flexbox Row</h2>
+        <p>
+          Use these three properties to create a Flexbox row layout.
+        </p>
+        <article>
+          <pre>
+            <code>
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+
+      <section>
+        <h2>Flex Column</h2>
+        <p>
+          Use this to create a Felxbox column layout.
+        </p>
+        <article>
+          <pre>
+            <code>
+.column{
+  display:flex;
+  flex-direction: column;
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+      <section>
+        <h2>CSS Grid Layout</h2>
+        <p>
+          Build a 12-column layout using CSS Grid.
+        </p>
+        <article>
+          <pre>
+            <code>
+.grid{
+  dispaly: grid;
+  width:100%;
+  grid-template-columns:
+  repeat(12, 1fr);
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+      <section>
+        <h2>Linear Gradients</h2>
+        <p>
+          This will create a background linear gradient from top to bottom.
+        </p>
+        <article>
+          <pre>
+            <code>
+.linear-gradient-backgorund{
+  background-image: 
+  linear-gradient(
+    rgba(232, 012, 236, 0.3) 
+    0%,
+    rgba(232, 012, 236, 0.6) 
+    100%,
+  );
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+      <section>
+        <h2>Box transition Glow</h2>
+        <p>
+          Use transition and box shadows to glow on hover.
+        </p>
+        <article>
+          <pre>
+            <code>
+.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s 
+  ease-in-out;
+}
+
+.code-card:hover, 
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px
+  rgba(232, 012, 236, 1), 
+  0px 0px 15px
+  rgba(232, 012, 236, 1);
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+      <section>
+        <h2>Overlay Card with Title</h2>
+        <p>
+          Use position properties and negative margins to raise elements higher than their natural starting point.
+        </p>
+        <article>
+          <pre>
+            <code>
+.card-header {
+  position: realtive;
+  margin-top; -20px;
+}
+            </code>
+          </pre>
+        </article>
+      </section>
+      
+    <footer>
+        <h3>Made with <span></span> and CSS</h3>
+    </footer>
+  </body>
+</html>
